@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const Subtitle = () => (
+export const Subtitle = ({ proceed }) => (
   <Container>
-    <h2>Got something to say?</h2>
-    <Link to="/clap">
-      I got somethin' to say
-    </Link>
+    <SubtitleText>for shade throwing</SubtitleText>
+    <button onClick={proceed}>#throwshade</button>
   </Container>
 );
 
 const Container = styled.div`
   text-align: center;
+`;
+
+const SubtitleText = styled.h2`
+  font-size: 42px;
+  letter-spacing: 6px;
 `;
