@@ -4,7 +4,6 @@ import { Emoji } from './emoji';
 
 export const Title = () => (
   <TitleContainer>
-    {/* <p>{emoji('👏🔙', { baseUrl: '//twemoji.maxcdn.com/2/svg/', ext: '.svg', size: '' })}</p> */}
     <Emoji icons='👏🔙' />
   </TitleContainer>
 );
