@@ -14,5 +14,4 @@ const Container = styled.div`
 
 const SubtitleText = styled.h2`
   font-size: 42px;
-  letter-spacing: 6px;
 `;
