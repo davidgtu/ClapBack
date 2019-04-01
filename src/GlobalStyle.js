@@ -26,4 +26,8 @@ export const GlobalStyle = createGlobalStyle`
   p, textarea, li, ol, span {
     font-family: 'Lato', sans-serif;
   }
+
+  textarea {
+    resize: none;
+  }
 `;

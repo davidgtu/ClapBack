@@ -33,7 +33,7 @@ const Container = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
-  padding: 90px 0;
+  padding: 75px 0;
   border-radius: 3px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 `;
