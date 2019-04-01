@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { TextareaStyles } from './styles';
 import { disabledGray, borderGray } from '../styles';
 
-export const Output = ({ text }) => (
-  <TextareaContainer>
-    <Textarea
-      value={text}
-      placeholder="We'll provide the applause"
-      readOnly
-    />
-  </TextareaContainer>
-)
+export const Output = ({ text }) => {
+  const outputTextarea = useRef(null);
+  useEffect(() => { outputTextarea.current.scrollTop = outputTextarea.current.scrollHeight })
+
+  return (
+    <TextareaContainer>
+      <Textarea
+        ref={outputTextarea}
+        value={text}
+        placeholder="We'll provide the applause"
+        readOnly
+      />
+    </TextareaContainer>
+  );
+};
 
 const Textarea = styled.textarea`
   ${TextareaStyles}
