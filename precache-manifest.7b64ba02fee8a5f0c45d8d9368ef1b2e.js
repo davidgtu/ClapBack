@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "24460caa3ea9218c4d45",
-    "url": "/ClapBack/static/js/main.5bee8bd5.chunk.js"
+    "revision": "560f49c7be4d25453dc5",
+    "url": "/ClapBack/static/js/main.34f9f6f4.chunk.js"
   },
   {
     "revision": "c13bb214f85a15d36a49",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/ClapBack/static/js/2.a33231f9.chunk.js"
   },
   {
-    "revision": "7aca2010a7e9ebd0f45b0a681a0d35a6",
+    "revision": "f0c07fe28eeab2a9a6e6b151cc808087",
     "url": "/ClapBack/index.html"
   }
 ];
