@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { GlobalStyle } from './GlobalStyle';
 import Title from './components/Title';
@@ -6,18 +6,22 @@ import Subtitle from './components/Subtitle';
 import TextInput from './components/TextInput';
 import { white } from './components/styles';
 
-const App = () => (
-  <>
-    <GlobalStyle />
-    <BodyContainer>
-      <Container>
-        <Title />
-        <Subtitle />
-        <TextInput />
-      </Container>
-    </BodyContainer>
-  </>
-);
+const App = () => {
+  useEffect(() => document.title = '👏excuse👏me👏how👏dare👏yuo???👏')
+
+  return (
+    <>
+      <GlobalStyle />
+      <BodyContainer>
+        <Container>
+          <Title />
+          <Subtitle />
+          <TextInput />
+        </Container>
+      </BodyContainer>
+    </>
+  );
+};
 
 export default App;
 
