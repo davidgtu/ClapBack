@@ -5,9 +5,9 @@ export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Lato');
   @font-face {
     font-family: "Cooper Black";
-    src: url('/fonts/Cooper Black Regular.ttf') format("ttf"),
-         url('/fonts/cooper_black_regular-webfont.woff') format("woff"),
-         url('/fonts/cooper_black_regular-webfont.woff2') format("woff2");
+    src: local('Cooper Black'), url('fonts/Cooper Black Regular.ttf') format("ttf"),
+         local('Cooper Black'), url('fonts/cooper_black_regular-webfont.woff') format("woff"),
+         local('Cooper Black'), url('fonts/cooper_black_regular-webfont.woff2') format("woff2");
   }
 
   body {
