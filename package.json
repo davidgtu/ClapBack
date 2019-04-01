@@ -1,8 +1,10 @@
 {
   "name": "clap-back",
+  "homepage": "http://davidgtu.github.io/ClapBack",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-easy-emoji": "^1.2.0",
@@ -10,6 +12,8 @@
     "styled-components": "^4.1.3"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
