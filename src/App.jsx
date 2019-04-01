@@ -1,46 +1,39 @@
-import React, { useState } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
+import { GlobalStyle } from './GlobalStyle';
 import Title from './components/Title';
 import Subtitle from './components/Subtitle';
 import TextInput from './components/TextInput';
-import { MillenialPink } from './components/Colors';
+import { white } from './components/styles';
 
-const App = () => {
-  const [view, setView] = useState('initialView');
-
-  return (
-    <>
-      <GlobalStyle />
+const App = () => (
+  <>
+    <GlobalStyle />
+    <BodyContainer>
       <Container>
         <Title />
-        {view === 'initialView' && (
-          <Subtitle proceed={() => setView('textView')} />
-        )}
-        {view === 'textView' && (
-          <TextInput />
-        )}
+        <Subtitle />
+        <TextInput />
       </Container>
-    </>
-  )
-};
+    </BodyContainer>
+  </>
+);
 
 export default App;
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: ${MillenialPink};
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-  }
-`
-
-const Container = styled.div`
+const BodyContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+const Container = styled.div`
+  background: ${white};
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 90px 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 `;

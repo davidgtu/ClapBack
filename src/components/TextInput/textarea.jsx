@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Output } from './output';
 import styled from 'styled-components';
+import { Output } from './output';
+import { TextareaStyles } from './styles';
+// import { DEFAULT_TEXT } from './static';
 
 const format = (text) => text.replace(/ /g, '👏')
 
@@ -21,11 +23,12 @@ export const Textarea = () => {
 }
 
 const Container = styled.div`
-  text-align: center;
-  max-width: 420px;
-  margin: 0 auto;
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: center;
 `;
 
 const TextareaInput = styled.textarea`
-
+  ${TextareaStyles}
+  margin-right: 9px;
 `;

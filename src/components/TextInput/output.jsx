@@ -1,5 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
+import { TextareaStyles } from './styles';
 
 export const Output = ({ text }) => (
-  <p>{text}</p>
+  <Textarea value={text} readOnly>{text}</Textarea>
 )
+
+const Textarea = styled.textarea`
+  ${TextareaStyles}
+`;

@@ -1,1 +1,0 @@
-export const MillenialPink = '#fa9fa6';

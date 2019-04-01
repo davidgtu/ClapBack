@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Subtitle = ({ proceed }) => (
+export const Subtitle = () => (
   <Container>
-    <SubtitleText>for shade throwing</SubtitleText>
-    <button onClick={proceed}>#throwshade</button>
+    <SubtitleText>go ahead, #throwshade</SubtitleText>
   </Container>
 );
 
@@ -14,4 +13,6 @@ const Container = styled.div`
 
 const SubtitleText = styled.h2`
   font-size: 42px;
+  font-weight: 200;
+  margin-top: 24px;
 `;

@@ -1,7 +1,7 @@
 import emoji from 'react-easy-emoji';
 
-export const Emoji = ({ icons }) => (
-  emoji(icons, {
+export const Emoji = ({ icon }) => (
+  emoji(icon, {
     baseUrl: '//twemoji.maxcdn.com/2/svg/',
     ext: '.svg',
     size: '',
