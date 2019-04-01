@@ -5,7 +5,11 @@ import { disabledGray, borderGray } from '../styles';
 
 export const Output = ({ text }) => (
   <TextareaContainer>
-    <Textarea value={text} readOnly>{text}</Textarea>
+    <Textarea
+      value={text}
+      placeholder="We'll provide the applause"
+      readOnly
+    />
   </TextareaContainer>
 )
 

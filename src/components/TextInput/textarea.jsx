@@ -24,7 +24,11 @@ export const Textarea = () => {
     <Container>
       <TextareaContainer>
         {!!pureText && <StyledCloseIcon onClick={clearText} />}
-        <TextareaInput value={pureText} onChange={(e) => setTexts(e.target.value)} />
+        <TextareaInput
+          value={pureText}
+          onChange={(e) => setTexts(e.target.value)}
+          placeholder="Type out your comeback"
+        />
       </TextareaContainer>
       <Output text={text} />
     </Container>
