@@ -7,7 +7,7 @@ import TextInput from './components/TextInput';
 import { white } from './components/styles';
 
 const App = () => {
-  useEffect(() => document.title = '👏excuse👏me👏how👏dare👏yuo???👏')
+  useEffect(() => { document.title = '👏excuse👏me👏how👏dare👏yuo???👏' })
 
   return (
     <>
